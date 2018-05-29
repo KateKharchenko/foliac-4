@@ -123,6 +123,13 @@ textarea {}
 	border-radius: 3px;
 }
 
+.btn:hover,
+.btn:focus,
+.btn:active {
+	color: #fff;
+	background: #48bf72;
+}
+
 header {
 	position: absolute;
 	top: 0;
@@ -176,6 +183,109 @@ nav {
 	font-weight: 700;
 }
 
+.menu li a:hover,
+.menu li a:focus,
+.menu li a:active {
+	color: #48bf72;
+}
+
 .menu li:last-of-type a {
 	padding-right: 0;
+}
+
+.switchers {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.switchers li {
+	display: inline-block;
+	padding: 0 7px;
+}
+
+.switchers li a {
+	text-decoration: none;
+	color:  #3c4955;
+	background: #eaeaea;
+	border-radius: 3px;
+	padding: 7px 15px;
+	font-weight: 700;
+}
+
+.switchers li a:hover,
+.switchers li a:focus,
+.switchers li a:active,
+.switchers li.active a {
+	background: #48bf72;
+	color:  #fff;
+}
+
+.images {
+	font-size: 0;
+}
+
+.images-column {
+	display: inline-block;
+	width:  38%;
+	font-size: 1.6rem;
+}
+
+.images-column--lg {
+	width: 58%;
+	margin-left: 4%;
+}
+
+.image {
+	padding-top: 60%;
+	/* height: 305px; */
+	margin-bottom: 40px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.image--l {
+	padding-top: 52%;
+	/* height: 355px; */
+}
+
+.image--xl {
+	padding-top: 59.4%;
+	/* height: 440px; */
+}
+
+.image--xxl {
+	/* height: 490px; */
+	padding-top: 110%;
+}
+
+.image img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.image-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(72,191,114, .8);
+	color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+}
+
+.image-title {
+	font-size: 3rem;
+	word-wrap: break-word;
 }
